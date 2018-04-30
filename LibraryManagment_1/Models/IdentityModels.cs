@@ -21,7 +21,7 @@ namespace LibraryManagment_1.Models
     {
         public DbSet<Book> Books { get; set; }
         public ApplicationDbContext()
-            : base(Database1, false)
+            : base("name=ApplicationDbContext")
         {
         }
         public static ApplicationDbContext Create()
